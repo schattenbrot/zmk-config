@@ -7,8 +7,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 #include "../zmk-nodefree-config/helper.h"
+
+#define PWR_TOGGLE &ext_power EP_TOG
 
 #define DEFAULT 0
 #define NUM 1
@@ -66,6 +69,45 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             key-positions = <7 8>;
             bindings = <&kp RPAR>;
         };
+        
+        combo_lessthan {
+            layers = <DEFAULT>;
+            timeout-ms = <50>;
+            key-positions = <26 28>;
+            bindings = <&kp LESS_THAN>;
+        };
+        combo_greaterthan {
+            layers = <DEFAULT>;
+            timeout-ms = <50>;
+            key-positions = <27 228>;
+            bindings = <&kp GREATER_THAN>;
+        };
+        
+        combo_leftbracket {
+            layers = <DEFAULT>;
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp LEFT_BRACKET>;
+        };
+        combo_rightbracket {
+            layers = <DEFAULT>;
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp RIGHT_BRACKET>;
+        };
+        
+        combo_leftbrace {
+            layers = <DEFAULT>;
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp LEFT_BRACE>;
+        };
+        combo_rightbrace {
+            layers = <DEFAULT>;
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp RIGHT_BRACE>;
+        };
     };
 
     keymap {
@@ -109,9 +151,9 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 
         nagivation_layer {
             bindings = <
-            &none        &none        &none        &none        &none                    &none        &none        &none        &none        &none 
+            &PWR_TOGGLE  &none        &none        &none        &none                    &kp PG_UP    &kp HOME     &kp PG_DOWN  &kp END      &none 
             &kp LALT     &kp LCTL     &kp LSFT     &kp LGUI     &kp RALT                 &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &none
-            &none        &none        &none        &none        &none                    &none        &none        &none        &none        &none
+            &bt BT_CLR   &bt BT_SEL1  &bt BT_SEL2  &bt BT_SEL3  &none                    &none        &none        &none        &none        &none
                                                    &trans       &none                    &kp K_CMENU  &kp DEL
             >;
         };
