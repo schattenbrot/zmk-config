@@ -36,6 +36,26 @@
             key-positions = <30 31>;
             bindings = <&kp TAB>;
         };
+
+        combo_col {
+            layers = <DEFAULT>;
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp COLON>;
+        };
+
+        combo_lparanthesis {
+            layers = <DEFAULT>;
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&kp LPAR>;
+        };
+        combo_rparanthesis {
+            layers = <DEFAULT>;
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp RPAR>;
+        };
     };
 
     keymap {
@@ -44,7 +64,7 @@
         default_layer {
             bindings = <
             &kp Q        &kp W        &kp F        &kp P        &kp B                    &kp J        &kp L        &kp U        &kp Y        &kp SCLN 
-            &kp A        &kp R        &kp S        &kp T        &kp G                    &kp M        &kp N        &kp E        &kp I        &kp O
+            &mt LALT A   &mt LCTL R   &mt LSFT S   &mt LGUI T   &mt RALT G               &mt RALT M   &mt RGUI N   &mt RSFT E   &mt RCTL I   &mt LALT O
             &kp Z        &kp X        &kp C        &kp D        &kp V                    &kp K        &kp H        &kp CMMA     &kp DOT      &kp FSLH
                                                    &lt NAV RET  &lt NUM ESC              &lt SYM SPC  &lt FUN BSPC
             >;
@@ -63,7 +83,7 @@
             bindings = <
             &none        &none        &none        &none        &none                    &none        &none        &none        &none        &kp DEL 
             &kp BSLH     &kp AT       &kp HASH     &kp DOLLAR   &kp PERCENT              &kp CARET    &kp AMPS     &kp STAR     &kp EQUAL    &kp SQT
-            &kp PIPE     &none        &none        &none        &none                    &none        &kp UNDER       &none        &none        &kp DQT
+            &kp PIPE     &none        &none        &kp MINUS    &none                    &none        &kp UNDER       &none        &none        &kp DQT
                                                    &none        &none                    &trans       &none
             >;
         };
