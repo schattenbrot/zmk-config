@@ -151,7 +151,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 
         nagivation_layer {
             bindings = <
-            &PWR_TOGGLE  &none        &none        &none        &none                    &kp PG_UP    &kp HOME     &kp PG_DOWN  &kp END      &none 
+            PWR_TOGGLE  &none        &none        &none        &none                    &kp PG_UP    &kp HOME     &kp PG_DOWN  &kp END      &none 
             &kp LALT     &kp LCTL     &kp LSFT     &kp LGUI     &kp RALT                 &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &none
             &bt BT_CLR   &bt BT_SEL1  &bt BT_SEL2  &bt BT_SEL3  &none                    &none        &none        &none        &none        &none
                                                    &trans       &none                    &kp K_CMENU  &kp DEL
