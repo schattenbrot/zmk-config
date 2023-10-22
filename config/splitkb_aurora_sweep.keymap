@@ -74,13 +74,13 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             layers = <DEFAULT>;
             timeout-ms = <50>;
             key-positions = <26 28>;
-            bindings = <&kp LESS_THAN>;
+            bindings = <&kp LT>;
         };
         combo_greaterthan {
             layers = <DEFAULT>;
             timeout-ms = <50>;
             key-positions = <27 228>;
-            bindings = <&kp GREATER_THAN>;
+            bindings = <&kp GT>;
         };
         
         combo_leftbracket {
