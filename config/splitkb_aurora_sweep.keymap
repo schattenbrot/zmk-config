@@ -18,7 +18,7 @@
 
 &mt {
     //  flavor = "tap-preferred";
-     tapping_term_ms = <200>;
+     tapping_term_ms = <400>;
 };
 
 &led_strip {
@@ -102,7 +102,7 @@
             &none        &none        &none        &none        &none                    &none        &none        &none        &none        &none 
             &kp LALT     &kp LCTL     &kp LSFT     &kp LGUI     &kp RALT                 &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &none
             &none        &none        &none        &none        &none                    &none        &none        &none        &none        &none
-                                                   &trans       &none                    &none        &kp K_CMENU
+                                                   &trans       &none                    &kp K_CMENU  &kp DEL
             >;
         };
 
