@@ -63,7 +63,7 @@
             bindings = <
             &none        &none        &none        &none        &none                    &none        &none        &none        &none        &kp DEL 
             &kp BSLH     &kp AT       &kp HASH     &kp DOLLAR   &kp PERCENT              &kp CARET    &kp AMPS     &kp STAR     &kp EQUAL    &kp SQT
-            &kp PIPE     &none        &none        &none        &none                    &none        &UNDER       &none        &none        &kp DQT
+            &kp PIPE     &none        &none        &none        &none                    &none        &kp UNDER       &none        &none        &kp DQT
                                                    &none        &none                    &trans       &none
             >;
         };
