@@ -133,7 +133,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 
         symbol_layer {
             bindings = <
-            &kp GRAVE    &TILDE       &none        &none        &none                    &none        &none        &none        &none        &kp DEL 
+            &kp GRAVE    &kp TILDE    &none        &none        &none                    &none        &none        &none        &none        &kp DEL 
             &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PERCENT              &kp CARET    &kp AMPS     &kp STAR     &kp EQUAL    &kp SQT
             &kp BSLH     &kp PIPE     &none        &kp MINUS    &none                    &none        &kp UNDER    &none        &none        &kp DQT
                                                    &none        &none                    &trans       &kp DEL
