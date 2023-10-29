@@ -74,13 +74,13 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             layers = <DEFAULT>;
             timeout-ms = <50>;
             key-positions = <26 28>;
-            bindings = <&kp LT>;
+            bindings = <&kp LESS_THAN>;
         };
         combo_greaterthan {
             layers = <DEFAULT>;
             timeout-ms = <50>;
             key-positions = <27 228>;
-            bindings = <&kp GT>;
+            bindings = <&kp GREATER_THAN>;
         };
         
         combo_leftbracket {
@@ -133,7 +133,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 
         symbol_layer {
             bindings = <
-            &none        &none        &none        &none        &none                    &none        &none        &none        &none        &kp DEL 
+            &kp GRAVE    &TILDE       &none        &none        &none                    &none        &none        &none        &none        &kp DEL 
             &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PERCENT              &kp CARET    &kp AMPS     &kp STAR     &kp EQUAL    &kp SQT
             &kp BSLH     &kp PIPE     &none        &kp MINUS    &none                    &none        &kp UNDER    &none        &none        &kp DQT
                                                    &none        &none                    &trans       &kp DEL
