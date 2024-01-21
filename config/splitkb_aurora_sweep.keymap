@@ -47,7 +47,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             layers = <DEFAULT>;
             timeout-ms = <50>;
             key-positions = <12 27>;
-            bindings = <&caps_word>;
+            bindings = <&kp E>;
         };
 
         combo_tab {
