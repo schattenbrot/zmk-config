@@ -38,6 +38,10 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     chain-length = <23>;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
 / {
 
     combos {
