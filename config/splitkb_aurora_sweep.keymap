@@ -43,6 +43,13 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     combos {
         compatible = "zmk,combos";
 
+        combo_caps_word {
+            layers = <DEFAULT>;
+            timeout-ms = <50>;
+            key-positions = <12 27>;
+            bindings = <&caps_word>;
+        };
+
         combo_tab {
             layers = <DEFAULT>;
             timeout-ms = <50>;
@@ -69,7 +76,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             key-positions = <7 8>;
             bindings = <&kp RPAR>;
         };
-        
+
         combo_lessthan {
             layers = <DEFAULT>;
             timeout-ms = <50>;
@@ -82,7 +89,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             key-positions = <27 28>;
             bindings = <&kp GREATER_THAN>;
         };
-        
+
         combo_leftbracket {
             layers = <DEFAULT>;
             timeout-ms = <50>;
@@ -95,7 +102,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             key-positions = <2 3>;
             bindings = <&kp RIGHT_BRACKET>;
         };
-        
+
         combo_leftbrace {
             layers = <DEFAULT>;
             timeout-ms = <50>;
