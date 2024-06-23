@@ -179,7 +179,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             &none           &none           &none           &none           &none                   &none   &none   &none   &none   &none
                                                             &trans          &none                   &none   &trans
             >;
-        }
+        };
 
         gaming_1_layer {
             bindings = <
@@ -188,7 +188,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             &kp LCTL    &kp 9    &kp 0    &kp MINUS    &kp EQUAL               &kp G   &kp H      &kp DOWN   &kp K       &none
                                           &kp 1        &trans                  &kp B   &kp M
             >;
-        }
+        };
 
         gayming_2_layer {
             bindings = <
@@ -197,6 +197,6 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             &none      &kp V     &none     &kp F11       &kp F12               &none   &none   &none   &none   &none
                                            &trans        &none                 &none   &none
             >;
-        }
+        };
     };
 };
