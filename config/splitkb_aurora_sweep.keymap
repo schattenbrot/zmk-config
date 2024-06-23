@@ -20,7 +20,7 @@
 #define NAV 4
 #define BLU 5
 #define GAM2 8
-#define Gam3 9
+#define GAM3 9
 
 /* custom behaviors */
 
