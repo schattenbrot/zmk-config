@@ -19,8 +19,8 @@
 #define SYM 3
 #define NAV 4
 #define BLU 5
-#define GAM2 8
-#define GAM3 9
+#define GAM2 6
+#define GAM3 7
 
 /* custom behaviors */
 
@@ -132,7 +132,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             &kp Q        &kp W        &kp F        &kp P        &kp B                    &kp J        &kp L        &kp U        &kp Y        &kp SCLN 
             &hrm LALT A  &hrm LCTL R &hrm LSFT S   &hrm LGUI T  &hrm RALT G              &hrm RALT M  &hrm RGUI N  &hrm RSFT E  &hrm RCTL I  &hrm LALT O
             &kp Z        &kp X        &kp C        &kp D        &kp V                    &kp K        &kp H        &kp CMMA     &kp DOT      &kp FSLH
-                                                   &lt NAV RET  &lt NUM ESC              &kp SPC      &lt SYM MINUS
+                                                   &lt NAV RET  &lt NUM ESC              &kp SPC      &lt SYM BSPC
             >;
         };
         
