@@ -138,10 +138,10 @@ ZMK_BEHAVIOR(hrm, hold_tap,
         
         gaming_layer {
             bindings = <
-            &kp TAB     &kp Q    &kp T    &kp E    &kp R                   &kp Y   &kp U      &kp I      &kp O       &none
-            &kp LSFT     &kp A    &kp W    &kp D    &kp F                   &kp J   &kp LEFT   &kp UP     &kp RIGHT   &none
-            &kp LCTL    &kp Z    &kp S    &kp X    &kp C                   &kp G   &kp H      &kp DOWN   &kp K       &none
-                             &lt GAM2 SPC          &sl GAM3                &kp B   &kp M
+            &kp TAB     &kp Q    &kp T    &kp E    &kp R                   &kp Y   &kp U      &kp I      &kp O       &kp P
+            &kp LSFT    &kp A    &kp W    &kp D    &kp F                   &kp J   &kp LEFT   &kp UP     &kp RIGHT   &kp L
+            &kp LCTL    &kp Z    &kp S    &kp X    &kp C                   &kp G   &kp H      &kp DOWN   &kp K       &kp N
+                                   &lt GAM2 SPC    &sl GAM3                &kp B   &kp M
             >;
         };
 
@@ -183,10 +183,10 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 
         gaming_1_layer {
             bindings = <
-            &kp ESC     &kp 1    &kp 2    &kp 3        &kp 4                   &kp Y   &kp U      &kp I      &kp O       &to DEFAULT
-            &kp LSFT    &kp 5    &kp 6    &kp 7        &kp 8                   &kp J   &kp LEFT   &kp UP     &kp RIGHT   &none
-            &kp LCTL    &kp 9    &kp 0    &kp MINUS    &kp EQUAL               &kp G   &kp H      &kp DOWN   &kp K       &none
-                                          &kp 1        &trans                  &kp B   &kp M
+            &kp ESC     &kp N1    &kp N2    &kp N3        &kp N4                 &kp Y   &kp U      &kp I      &kp O       &to DEFAULT
+            &kp LSFT    &kp N5    &kp N6    &kp N7        &kp N8                 &kp J   &kp LEFT   &kp UP     &kp RIGHT   &none
+            &kp LCTL    &kp N9    &kp N0    &kp MINUS    &kp EQUAL               &kp G   &kp H      &kp DOWN   &kp K       &none
+                                            &none        &none                   &kp B   &kp M
             >;
         };
 
@@ -195,7 +195,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
             &kp F6     &kp F7    &kp F8    &kp F9        &kp F10               &none   &none   &none   &none   &to DEFAULT
             &kp F1     &kp F2    &kp F3    &kp F4        &kp F5                &none   &none   &none   &none   &none
             &none      &kp V     &none     &kp F11       &kp F12               &none   &none   &none   &none   &none
-                                           &trans        &none                 &none   &none
+                                           &none        &none                 &none   &none
             >;
         };
     };
